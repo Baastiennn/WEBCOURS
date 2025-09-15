@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Habitudes - Tracker Personnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Mes Habitudes</h1>
+            <p class="today-date">Aujourd'hui : <span id="current-date"></span></p>
+        </header>
+
+        <!-- Section Ajout Rapide -->
+        <section class="quick-add-section">
+            <h2>➕ Nouvelle habitude</h2>
+            <form id="add-habit-form" class="add-form">
+                <input
+                    type="text"
+                    id="habit-name"
+                    placeholder="Ex: Lire 20 minutes"
+                    required
+                >
+                <input
+                    type="text"
+                    id="habit-emoji"
+                    placeholder="📚"
+                    maxlength="2"
+                >
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+
+        <!-- Section Aujourd'hui -->
+        <section class="today-section">
+            <h2>🎯 Aujourd'hui</h2>
+            <div id="today-habits" class="habits-grid">
+                <!-- Habitudes du jour générées ici -->
+            </div>
+        </section>
+
+        <!-- Section Progrès -->
+        <section class="progress-section">
+            <h2>📊 Mes Progrès</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number" id="total-habits">0</span>
+                    <span class="stat-label">Habitudes actives</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="completion-rate">0%</span>
+                    <span class="stat-label">Réussite aujourd'hui</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="best-streak">0</span>
+                    <span class="stat-label">Meilleure série</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Historique -->
+        <section class="history-section">
+            <h2>📈 Cette Semaine</h2>
+            <div id="week-view" class="week-calendar">
+                <!-- Calendrier de la semaine généré ici -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

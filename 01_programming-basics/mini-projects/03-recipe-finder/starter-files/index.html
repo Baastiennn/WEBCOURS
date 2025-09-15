@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Menu - Que cuisiner ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Que Cuisiner ?</h1>
+            <p>Découvrez des plats avec vos ingrédients</p>
+        </header>
+
+        <!-- Section Sélection d'Ingrédients -->
+        <section class="ingredients-section">
+            <h2>🥕 Mes Ingrédients Disponibles</h2>
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="ingredient-search"
+                    placeholder="Rechercher un ingrédient..."
+                >
+            </div>
+            <div id="ingredients-grid" class="ingredients-grid">
+                <!-- Ingrédients générés ici -->
+            </div>
+            <div class="selected-summary">
+                <span id="selected-count">0</span> ingrédients sélectionnés
+                <button id="clear-selection" class="clear-btn">Tout effacer</button>
+            </div>
+        </section>
+
+        <!-- Section Suggestions -->
+        <section class="suggestions-section">
+            <div class="suggestions-header">
+                <h2>🎯 Suggestions pour Vous</h2>
+                <div class="filters">
+                    <select id="difficulty-filter">
+                        <option value="">Toute difficulté</option>
+                        <option value="facile">Facile</option>
+                        <option value="moyen">Moyen</option>
+                        <option value="difficile">Difficile</option>
+                    </select>
+                    <select id="time-filter">
+                        <option value="">Tout timing</option>
+                        <option value="15">Moins de 15 min</option>
+                        <option value="30">Moins de 30 min</option>
+                        <option value="60">Moins d'1 heure</option>
+                    </select>
+                </div>
+            </div>
+            <div id="recipes-grid" class="recipes-grid">
+                <!-- Recettes suggérées ici -->
+            </div>
+        </section>
+
+        <!-- Section Détail Recette -->
+        <section id="recipe-detail" class="recipe-detail-section" style="display: none;">
+            <div class="recipe-header">
+                <button id="back-to-suggestions" class="back-btn">← Retour</button>
+                <h2 id="recipe-title">Nom de la recette</h2>
+                <button id="favorite-toggle" class="favorite-btn">♡</button>
+            </div>
+            <div class="recipe-content">
+                <div class="recipe-info">
+                    <div class="info-item">
+                        <span class="label">Difficulté :</span>
+                        <span id="recipe-difficulty">Facile</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Temps :</span>
+                        <span id="recipe-time">15 min</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Portions :</span>
+                        <input type="number" id="recipe-portions" value="2" min="1" max="10">
+                    </div>
+                </div>
+                <div class="recipe-ingredients">
+                    <h3>Ingrédients</h3>
+                    <ul id="recipe-ingredients-list">
+                        <!-- Ingrédients avec quantités -->
+                    </ul>
+                </div>
+                <div class="recipe-steps">
+                    <h3>Étapes</h3>
+                    <ol id="recipe-steps-list">
+                        <!-- Étapes de préparation -->
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Favoris -->
+        <section class="favorites-section">
+            <h2>⭐ Mes Recettes Favorites</h2>
+            <div id="favorites-grid" class="recipes-grid">
+                <!-- Recettes favorites -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
