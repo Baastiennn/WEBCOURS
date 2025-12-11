@@ -41,8 +41,11 @@ A measure of how the runtime or space requirements of an algorithm grow with inp
 **Constructor**  
 A special method used to create and initialize objects in object-oriented programming.
 
-**CRUD**  
+**CRUD**
 Create, Read, Update, Delete - the four basic operations of persistent storage.
+
+**CRDT (Conflict-free Replicated Data Type)**
+Une structure de données qui permet la fusion automatique de modifications concurrentes sans conflits. Essentiel pour les applications local-first.
 
 ## D
 
@@ -104,13 +107,16 @@ A JavaScript mechanism where variable and function declarations are moved to the
 
 ## I
 
-**Inheritance**  
+**IndexedDB**
+API de base de données NoSQL asynchrone côté client pour stocker de grandes quantités de données structurées dans le navigateur.
+
+**Inheritance**
 A mechanism where a new class inherits properties and methods from an existing class.
 
-**Interface**  
+**Interface**
 A contract that defines what methods a class must implement.
 
-**Iteration**  
+**Iteration**
 The repetition of a process or set of instructions in a program.
 
 ## J
@@ -131,14 +137,20 @@ A reserved word in a programming language that has special meaning.
 
 ## L
 
-**Library**  
+**Library**
 A collection of pre-written code that can be used in programs.
 
-**Loop**  
+**Local-First**
+Paradigme de développement où l'application fonctionne d'abord localement, avec synchronisation en arrière-plan. Priorité aux données locales.
+
+**Loop**
 A programming construct that repeats a block of code.
 
-**Linked List**  
+**Linked List**
 A data structure where elements are stored in nodes, each containing data and a reference to the next node.
+
+**LWW-Register (Last-Write-Wins Register)**
+CRDT simple où la valeur avec le timestamp le plus récent gagne lors de la fusion. Base des systèmes de synchronisation.
 
 ## M
 
@@ -164,24 +176,36 @@ Code structures placed inside other similar structures.
 
 ## O
 
-**Object**  
+**Object**
 A collection of related data and methods.
 
-**Object-Oriented Programming (OOP)**  
+**Object-Oriented Programming (OOP)**
 A programming paradigm based on the concept of "objects".
 
-**Operator**  
+**Offline-First**
+Approche de développement web où les applications fonctionnent sans connexion permanente, avec synchronisation automatique en arrière-plan.
+
+**Operator**
 A symbol that performs an operation on one or more operands.
+
+**OPFS (Origin Private File System)**
+API moderne permettant de manipuler des fichiers directement dans le navigateur avec performances optimales. Privé à l'origine.
+
+**Optimistic UI**
+Pattern d'interface où les changements sont affichés immédiatement avant confirmation serveur, pour une interaction instantanée.
 
 ## P
 
-**Parameter**  
+**P2P (Peer-to-Peer)**
+Architecture réseau où les clients communiquent directement entre eux sans serveur central. Utilisé pour la synchronisation offline-first.
+
+**Parameter**
 A variable used in a function to refer to one of the pieces of data provided as input.
 
-**Polymorphism**  
+**Polymorphism**
 The ability of different types to be treated as instances of the same type through a common interface.
 
-**Promise**  
+**Promise**
 An object representing the eventual completion or failure of an asynchronous operation.
 
 ## Q
@@ -252,10 +276,13 @@ A software implementation of a computer that executes programs like a physical m
 
 ## W
 
-**Web API**  
+**Web API**
 An application programming interface for a web application or web server.
 
-**Wrapper**  
+**WebRTC (Web Real-Time Communication)**
+API permettant la communication temps réel entre navigateurs (vidéo, audio, données) sans serveur central. Base du P2P web.
+
+**Wrapper**
 A function or class that provides a simplified interface to another function or class.
 
 ## X
