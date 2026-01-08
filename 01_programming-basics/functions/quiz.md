@@ -14,7 +14,7 @@ b) `undefined`
 c) `null`
 d) Erreur
 
-**Réponse : b) `undefined`**
+
 
 ### 2. Quelle déclaration de fonction fonctionnera grâce au hissage ?
 a) `const func = function() { };`
@@ -22,7 +22,7 @@ b) `let func = function() { };`
 c) `function func() { }`
 d) `var func = () => { }`
 
-**Réponse : c) `function func() { }`**
+
 
 ### 3. Quelle est la valeur de `x` après l'exécution de ce code ?
 ```javascript
@@ -36,7 +36,7 @@ b) `5`
 c) `8`
 d) `undefined`
 
-**Réponse : c) `8`**
+
 
 ### 4. Que retourne cette fonction fléchée ?
 ```javascript
@@ -47,7 +47,7 @@ b) `x * 2`
 c) C'est une erreur de syntaxe
 d) Le résultat de `x * 2`
 
-**Réponse : d) Le résultat de `x * 2`**
+
 
 ### 5. Quelle est la sortie de ce code ?
 ```javascript
@@ -60,24 +60,24 @@ b) `[2, 4, 6]`
 c) `6`
 d) `undefined`
 
-**Réponse : b) `[2, 4, 6]`**
+
 
 ## Questions Vrai/Faux
 
 ### 6. Les fonctions fléchées ont leur propre liaison `this`.
-**Réponse : Faux** (Les fonctions fléchées héritent du `this` de la portée englobante)
+ (Les fonctions fléchées héritent du `this` de la portée englobante)
 
 ### 7. Une fonction peut retourner une autre fonction en JavaScript.
-**Réponse : Vrai**
+
 
 ### 8. Les expressions de fonction sont hissées de la même manière que les déclarations de fonction.
-**Réponse : Faux** (Seules les déclarations de fonction sont entièrement hissées)
+ (Seules les déclarations de fonction sont entièrement hissées)
 
 ### 9. L'objet `arguments` est disponible dans les fonctions fléchées.
-**Réponse : Faux** (Disponible uniquement dans les fonctions régulières)
+ (Disponible uniquement dans les fonctions régulières)
 
 ### 10. Les fonctions pures retournent toujours la même sortie pour la même entrée.
-**Réponse : Vrai**
+
 
 ## Questions d'Analyse de Code
 
@@ -91,7 +91,7 @@ function externe(x) {
 const ajouterDix = externe(10);
 console.log(ajouterDix(5));
 ```
-**Réponse : 15** (La fermeture permet à la fonction interne d'accéder à `x`)
+ (La fermeture permet à la fonction interne d'accéder à `x`)
 
 ### 12. Qu'est-ce qui ne va pas avec cet appel de fonction ?
 ```javascript
@@ -100,14 +100,14 @@ function saluer(nom, salutation = "Bonjour") {
 }
 saluer();
 ```
-**Réponse : Paramètre requis `nom` manquant** (résultera en "Bonjour, undefined !")
+ (résultera en "Bonjour, undefined !")
 
 ### 13. Que retournera cette fonction reduce ?
 ```javascript
 const nombres = [1, 2, 3, 4];
 const resultat = nombres.reduce((acc, curr) => acc + curr, 0);
 ```
-**Réponse : 10** (Somme de tous les nombres : 1+2+3+4)
+ (Somme de tous les nombres : 1+2+3+4)
 
 ### 14. Complétez cette fonction d'ordre supérieur :
 ```javascript
@@ -115,7 +115,7 @@ function operation(a, b, callback) {
     return _______;
 }
 ```
-**Réponse : `callback(a, b)`**
+
 
 ## Questions Pratiques
 
@@ -142,7 +142,7 @@ function multiplier(a, b) {
     return a * b;
 }
 ```
-**Réponse : `const multiplier = (a, b) => a * b;`**
+
 
 ### 17. Écrivez une fonction qui filtre les nombres pairs d'un tableau :
 ```javascript
@@ -270,7 +270,7 @@ b) `const additionner = (a, b) => a + b;`
 c) Les deux sont également efficaces
 d) Cela dépend du moteur JavaScript
 
-**Réponse : c) Les deux sont également efficaces** (Les moteurs modernes optimisent les deux de manière similaire)
+ (Les moteurs modernes optimisent les deux de manière similaire)
 
 ### 27. Quelle technique peut optimiser les fonctions récursives avec des calculs répétés ?
 **Réponse :** Mémorisation - mise en cache des résultats précédents pour éviter les recalculs

@@ -8,6 +8,8 @@ b) `false`
 c) `undefined`
 d) Erreur
 
+reponse : true
+
 
 
 ### 2. Quelle valeur est fausse (falsy) en JavaScript ?
@@ -15,6 +17,8 @@ a) `[]`
 b) `"0"`
 c) `0`
 d) `{}`
+
+reponse : 
 
 
 
