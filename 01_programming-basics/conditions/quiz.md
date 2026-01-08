@@ -22,7 +22,7 @@ d) `{}`
 a) `true`
 b) `false`
 c) `undefined`
-d) ErreurZD
+d) Erreur
 
 
 
