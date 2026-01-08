@@ -14,6 +14,10 @@ b) `undefined`
 c) `null`
 d) Erreur
 
+A
+
+
+
 
 
 ### 2. Quelle déclaration de fonction fonctionnera grâce au hissage ?
@@ -21,6 +25,8 @@ a) `const func = function() { };`
 b) `let func = function() { };`
 c) `function func() { }`
 d) `var func = () => { }`
+
+c
 
 
 
@@ -35,6 +41,8 @@ a) `3`
 b) `5`
 c) `8`
 d) `undefined`
+
+8
 
 
 
