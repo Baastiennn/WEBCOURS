@@ -16,6 +16,10 @@
 function declarerVariables() {
     // Votre code ici
     return { nom, AGE_MAJORITE, estMajeur };
+
+    let nom 
+    let AGE_MAJORITE 18
+    let estMajeur 
 }
 ```
 
