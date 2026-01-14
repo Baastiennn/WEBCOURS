@@ -44,7 +44,7 @@ console.log(resultat.estMajeur === undefined); // true
 **Signature de la Fonction:**
 ```javascript
 function detecterType(variable) {
-    // Votre code ici
+    function 
 }
 ```
 
