@@ -72,8 +72,7 @@ detecterType(undefined) // "indéfini"
 **Signature de la Fonction:**
 ```javascript
 function creerProfil(nom, age, email) {
-    // Votre code ici
-    // Retourner l'objet profil
+    const
 }
 ```
 

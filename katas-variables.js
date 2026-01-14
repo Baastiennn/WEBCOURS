@@ -9,7 +9,17 @@
     console.log(declarerVariables())
 
     function detecterType(variable) {
-    function
+        return variable
 }
 
-    console.log(declarerVariables())
+    console.log(detecterType())
+
+let age = 20
+const nom = "Bastien"
+const email= "test@test.fr"
+
+function creerProfil(a, b, c) {
+    return a + " " + b + " " + c; 
+}
+
+console.log(creerProfil(age, nom , email))
